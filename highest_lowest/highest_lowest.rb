@@ -17,16 +17,26 @@ def bubble_sort (numbers)
     return numbers
 end
 
-def highest_lowest (array)
     array = []
-    puts "Skriv in ett heltal:"
+    tal = 0
+    quit = 0
+    while quit != "q" 
+        puts "Skriv in ett heltal:"
 
-    tal = gets.chomp.to_i
+        tal = gets.chomp.to_i
 
-    array << tal
+        array << tal
 
-    puts "Du har valt #{tal}, Den största talen är #{array[0]}, Den minsta talen är #{array[-1]} Vill du fortsätta? Ja = 1 Nej = q"
+        array = bubble_sort(array)
+        
+        puts "Du har valt #{tal}, Den största talen är #{array[-1]}, Den minsta talen är #{array[0]}, Vill du fortsätta? Ja = 1 Nej = q"
 
-end
+        quit = gets.chomp 
 
+        total = array.count
+        lista = File.open("lista.txt", "w")
+        lista.puts ("antal tal är #{total}, största tal är #{array[-1]}, minsta tal är #{array[0]}")
+        lista.close 
     
+    end
+
