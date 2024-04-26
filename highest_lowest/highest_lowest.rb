@@ -28,5 +28,5 @@ def highest_lowest (array)
     puts "Du har valt #{tal}, Den största talen är #{array[0]}, Den minsta talen är #{array[-1]} Vill du fortsätta? Ja = 1 Nej = q"
 
 end
-while
+
     
