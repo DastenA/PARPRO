@@ -1,1 +1,0 @@
-antal tal är 2, [4, 6] största tal är 6, minsta tal är 4

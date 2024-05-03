@@ -1,7 +1,13 @@
-#Beskrivning: 
+#Beskrivning: Funktionen är en bubble sort
+#Argument 1: Array - array med tal, integers
+#Return: 
+#Exempel:
+
+#Beskrivning: Funktionen är en interaktivt program som reagerar beroende på användarens input. 
 #Argument 1:
 #Return: 
 #Exempel:
+
 
 
 
