@@ -1,3 +1,12 @@
+#Beskrivning: 
+#Argument 1:
+#Return: 
+#Exempel:
+
+
+
+#By: Dasten Mohamad Amin och Cecilia Ciyako Karlsson
+#Date: 2024-05-03
 
 def bubble_sort (numbers)
 
@@ -29,14 +38,27 @@ end
 
         array = bubble_sort(array)
         
-        puts "Du har valt #{tal}, Den största talen är #{array[-1]}, Den minsta talen är #{array[0]}, Vill du fortsätta? Ja = 1 Nej = q"
+        puts "Du har valt #{tal}, Den största talen är #{array[-1]}, Den minsta talen är #{array[0]}, Välj ett siffra för att fortsätta"
 
-        quit = gets.chomp 
+        quit = gets.chomp
 
+
+        if quit.to_i.to_s != quit
+            puts "Du har skrivit in q eller annat ogiltigt tecken, vill du skriva in ett nytt heltal eller avsluta programmet? Om du har tryckt q kan du trycka q för att avsluta"
+
+            tal = gets.chomp.to_i
+
+            array << tal
+
+            array = bubble_sort(array)
+
+            array.delete_at(0)
+        end
+    
         total = array.count
         lista = File.open("lista.txt", "w")
-        lista.puts ("antal tal är #{total}, största tal är #{array[-1]}, minsta tal är #{array[0]}")
+        lista.puts ("antal tal är #{total}, #{array} största tal är #{array[-1]}, minsta tal är #{array[0]}")
         lista.close 
-    
+
     end
 
