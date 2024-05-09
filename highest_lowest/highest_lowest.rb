@@ -1,15 +1,23 @@
-#Beskrivning: Funktionen är en bubble sort
-#Argument 1: Array - array med tal, integers
-#Return: 
-#Exempel:
+# Beskrivning:
+# Denna kod implementerar en bubbel sortering för att sortera en lista med heltal. 
+# Användaren får mata in heltal i en while-loop tills de väljer att avsluta programmet genom att skriva "q". 
+# Programmet skriver sedan ut den största och minsta siffran i listan efter varje inmatning, samt antalet siffror.
+# Till sist sparar programmet resultatet i en fil "lista.txt".
 
-#Beskrivning: Funktionen är en interaktivt program som reagerar beroende på användarens input. 
-#Argument 1:
-#Return: 
-#Exempel:
+# Argument 1: Numbers - Array
+# En array som innehåller heltal att sortera.
 
+# Return: Array
+# Returnerar en array med heltal sorterade i stigande ordning.
 
+# Exempel:
+# Exempel 1:
+# bubble_sort([3, 1, 2]) => [1, 2, 3]
+# Returnerar en sorterad array där 1 är minsta talet och 3 är det största talet.
 
+# Exempel 2:
+# bubble_sort([10, 5, 8, 2]) => [2, 5, 8, 10]
+# Returnerar en sorterad array där 2 är minsta talet och 10 är det största talet.
 
 #By: Dasten Mohamad Amin och Cecilia Ciyako Karlsson
 #Date: 2024-05-03
