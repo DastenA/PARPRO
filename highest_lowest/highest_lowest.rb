@@ -10,7 +10,6 @@
 # Return: Array
 # Returnerar en array med heltal sorterade i stigande ordning.
 
-# Exempel:
 # Exempel 1:
 # bubble_sort([3, 1, 2]) => [1, 2, 3]
 # Returnerar en sorterad array där 1 är minsta talet och 3 är det största talet.
