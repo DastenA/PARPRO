@@ -18,6 +18,10 @@
 # bubble_sort([10, 5, 8, 2]) => [2, 5, 8, 10]
 # Returnerar en sorterad array där 2 är minsta talet och 10 är det största talet.
 
+# Exempel 3: 
+# bubble_sort([4, g, 1, 6]) => [0, 1, 4, 6]
+# Returnerar en sorterad array där 0 är minsta talet och 6 är största talet, då bubble sort räknar in g som 0.
+
 #By: Dasten Mohamad Amin och Cecilia Ciyako Karlsson
 #Date: 2024-05-03
 
@@ -51,7 +55,7 @@ end
 
         array = bubble_sort(array)
         
-        puts "Du har valt #{tal}, Den största talen är #{array[-1]}, Den minsta talen är #{array[0]}, Välj ett siffra för att fortsätta"
+        puts "Du har valt #{tal}, Den största talen är #{array[-1]}, Den minsta talen är #{array[0]}, Välj ett siffra för att fortsätta, eller tryck på q om du vill avsluta programmen"
 
         quit = gets.chomp
 
@@ -70,7 +74,7 @@ end
     
         total = array.count
         lista = File.open("lista.txt", "w")
-        lista.puts ("antal tal är #{total}, #{array} största tal är #{array[-1]}, minsta tal är #{array[0]}")
+        lista.puts ("antal tal är #{total}, största tal är #{array[-1]}, minsta tal är #{array[0]}")
         lista.close 
 
     end
